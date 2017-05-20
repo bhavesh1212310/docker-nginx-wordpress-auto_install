@@ -17,7 +17,7 @@ Source: https://github.com/topix-hackademy/docker-nginx-ssh-mysql-php7
 # MySQL Details
 ### The root password is empty
 ### WordPress Database details:
-`Username: yuli
-Password: can be found in Container Logs or in mysql-root-pw.txt which is located in root folder of your container`
+`Username: yuli`
+`Password: can be found in Container Logs or in mysql-root-pw.txt which is located in root folder of your container`
 
 After setup nginx will restart so wait for few sec before accesing your container.
