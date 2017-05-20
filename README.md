@@ -24,15 +24,15 @@ After setup nginx will restart so wait for few sec before accesing your containe
 
 
 # Additional Features
-## A theme skeleton will be added to themes folder to include your theme put your theme in 
+## A theme skeleton will be added to themes folder, to include your theme put your theme in 
 `wp-content/themes`
-## Multiple plugins will be added to plugins fodler to include your plugins put your plugins in
+## Multiple plugins will be added to plugins fodler, to include your plugins put your plugins in
 `wp-content/plugins`
 
 
 
 # Upcoming features
-..* Install and config ruby, node
-..* Setup gulp, sass, live reload, etc.
-..* Setup sendmail
-..* Install logrotate, logwatch and other security enhancements
++ Install and config ruby, node.
++ Setup gulp, sass, live reload, etc.
++ Setup sendmail.
++ Install logrotate, logwatch and other security enhancements.
