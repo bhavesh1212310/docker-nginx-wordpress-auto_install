@@ -23,13 +23,24 @@ service mysql start
  # mysql -uroot -p$MYSQL_PASSWORD -e "CREATE DATABASE wordpress; GRANT ALL PRIVILEGES ON wordpress.* TO 'wordpress'@'localhost' $
 mysql -uroot -e "CREATE DATABASE yuli; GRANT ALL PRIVILEGES ON yuli.* TO 'yuli'@'localhost' IDENTIFIED BY '$MYSQL_PASSWORD'; FLUSH PRIVILEGES;"
   #killall mysqld
-cd /usr/share/nginx/www
+cd /var/www/wordpress
 wp --allow-root core download
 wp --allow-root core config --dbhost="localhost" --dbname="yuli" --dbuser="yuli" --dbpass="$MYSQL_PASSWORD"
 chown -R www-data:www-data ./*
-service mysql stop
-/etc/init.d/ssh start
-service mysql start
-/etc/init.d/php7.0-fpm start
-service nginx restart
+#cd /usr/share/nginx/www/wp-content/themes/theme/
+#bundle
+#compass init
+#bundle exec guard &
+#service mysql stop
+#/etc/init.d/ssh start
+#service mysql start
+#/etc/init.d/php7.0-fpm start
+#service nginx restart
+#gem update --system
+#gem install bundler
+#cd /usr/share/nginx/www/wp-content/themes/theme/
+#bundle
+#compass init
+#chown -R topix:www-data *
+#bundle exec guard &
 fi
